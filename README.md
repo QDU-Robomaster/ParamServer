@@ -2,22 +2,16 @@
 
 ## 模块简介
 
----
-
 这是一个基于 TCP/IP 协议和 YAML 配置驱动的参数调试系统。它实现了 Python GUI 前端与 C++ 上位机后端的解耦，支持参数的实时热调整、持久化保存以及线程安全的参数更新。
 
 Python 客户端会读取 xrobot.yaml 中的 cfg 结构，递归生成对应的参数调节面板，修改参数后指令通过 TCP 发送至 C++ 服务端，同时支持将调整好的参数写回 xrobot.yaml 。
 
 ## 运行环境
 
----
-
 - Python: Python3.x, PyQt5, pyyaml
 - C++: LibXR
 
 ## 构造参数
-
----
 
 `ParamServer<tpename T>` 类的构造参数如下：
 
@@ -29,8 +23,6 @@ Python 客户端会读取 xrobot.yaml 中的 cfg 结构，递归生成对应的�
 - `port`: `uint16_t`，TCP 服务监听端口，在第一次注册时生效
 
 ## 如何使用
-
----
 
 ```bash
 # 添加需要管理参数的模块实例
@@ -45,8 +37,6 @@ xrobot_gen_main
 ```
 
 ## 如何为新模块添加调参功能
-
----
 
 1. C++ 模块实现
 
