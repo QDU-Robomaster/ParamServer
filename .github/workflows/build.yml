@@ -68,7 +68,7 @@ jobs:
 
       - name: Run xrobot_setup
         run: |
-          xrobot_setup || true
+          xrobot_src_man add-source https://qdu-robomaster.github.io/qdu-future-modules/index.yaml && xrobot_src_man add-source https://xrobot-org.github.io/xrobot-modules/index.yaml && xrobot_setup || true
 
       - name: Run xrobot_init_mod
         run: |
