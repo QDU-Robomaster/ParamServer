@@ -72,7 +72,7 @@ jobs:
 
       - name: Add module
         run: |
-          xrobot_add_mod qdu-future/ArmorDetector && xrobot_add_mod qdu-future/${{ env.XR_MODULE_NAME }} && cat User/xrobot.yaml
+          xrobot_add_mod qdu-future/ArmorDetector && xrobot_add_mod qdu-future/${{ env.XR_MODULE_NAME }}
 
       - name: Init Module
         run: |
