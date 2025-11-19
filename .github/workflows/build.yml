@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/xrobot-org/docker-image-linux:main
+      image: ghcr.io/xrobot-org/docker-image-webots:main
       options: --user 0
 
     env:
