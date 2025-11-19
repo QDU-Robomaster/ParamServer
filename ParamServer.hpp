@@ -5,13 +5,13 @@
 module_description: No description provided
 constructor_args:
   - name: "armor_detector"
-  - inst: ArmorDetector_0
+  - inst: '@ArmorDetector_0'
   - func: ArmorDetector::CommandAdapter
   - port: 5555
 template_args: []
 required_hardware: []
 depends:
-  - qdu-future/CameraBase
+  - qdu-future/ArmorDetector
 === END MANIFEST === */
 // clang-format on
 
